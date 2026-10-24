@@ -66,7 +66,7 @@ Betik içeriğinde bulunması gereken bilgiler:
    
    ```
 
-#### Aşama 5: Arama, Filtreleme ve Doğrulama
+#### Aşama 5: Arama, Filtreleme ve Doğrulama *
 
 1. Üretilen `rapor.log` dosyasının son 10 satırını görüntüleyin (`tail`).
 
@@ -76,23 +76,18 @@ Betik içeriğinde bulunması gereken bilgiler:
 
 4. Sistemdeki blok aygıtlarını ve bağlı disk bölümlerini listeleyin (`lsblk`).
 
-#### Aşama 6: Temizlik
-
-1. `sistem-testi` klasöründen bir üst dizine çıkın.
-
-2. Oluşturduğunuz `sistem-testi` klasörünü ve içerisindeki tüm dosyaları terminalden tek komutla kaldırın (`rm -r`).
 
 ### 3. Değerlendirme Kriterleri (Rubrik)
 
 | Alan | Kriter | Puan | 
 | ----- | ----- | ----- | 
-| **Gezinme & Dosya İşlemleri** | Dizin oluşturma, geçiş yapma, mutlak/göreli yol kullanımı ve silme | 25 | 
-| **Paket Yönetimi & Root** | `sudo` kullanımı, paket güncelleme ve kurulum adımları | 20 | 
-| **Bash Betiği & Düzenleyici** | Metin düzenleyici ile betik yazma, yönlendirme (`>`, `>>`) | 25 | 
-| **Dosya İzinleri** | Sayısal izin mantığını anlama (`chmod 700`) ve doğrulama | 25 | 
-| **Süreç Yönetimi** | Arka plan çalıştırma (`&`), PID ve çıkış kodu (`$?`) kontrolü | 5 | 
-| **Filtreleme & Arama** | `grep`, `tail`, `find` ve boru hattı kullanımı | x | 
-| **Sistem/Ağ Analizi** | Çekirdek, disk, RAM ve ağ parametrelerini doğru komutlarla alma | x | 
+| **Gezinme & Dosya İşlemleri** | Dizin oluşturma, geçiş yapma, mutlak/göreli yol kullanımı ve silme | 15 | 
+| **Paket Yönetimi & Root** | `sudo` kullanımı, paket güncelleme ve kurulum adımları | 10 | 
+| **Bash Betiği & Düzenleyici** | Metin düzenleyici ile betik yazma, yönlendirme (`>`, `>>`) | 20 | 
+| **Dosya İzinleri** | Sayısal izin mantığını anlama (`chmod 700`) ve doğrulama | 15 | 
+| **Süreç Yönetimi** | Arka plan çalıştırma (`&`), PID ve çıkış kodu (`$?`) kontrolü | 15 | 
+| **Filtreleme & Arama** | `grep`, `tail`, `find` ve boru hattı kullanımı | 10 | 
+| **Sistem/Ağ Analizi** | Çekirdek, disk, RAM ve ağ parametrelerini doğru komutlarla alma | 15 | 
 | **Toplam** |  | **100** | 
 
 ### 4. İlgili Komutlar Özeti
