@@ -14,7 +14,7 @@ Bu pratik yetkinlik testi; temel gezinti, dosya/dizin yönetimi, izinler, süre�
 
 ### 2. Uygulama Adımları
 
-#### Aşama 1: Ortam Hazırlığı ve Paket Yönetimi
+#### Aşama 1: Ortam Hazırlığı ve Paket Yönetimi  *
 
 1. Ev dizininize (`~`) geçiş yapın.
 
@@ -24,7 +24,7 @@ Bu pratik yetkinlik testi; temel gezinti, dosya/dizin yönetimi, izinler, süre�
 
 4. Sistemde mevcut değilse `curl` paketini sisteme kurun (`sudo apt install curl`).
 
-#### Aşama 2: Betik Geliştirme (`teshis.sh`)
+#### Aşama 2: Betik Geliştirme (`teshis.sh`)  *
 
 Klasör içinde `nano` veya `vim` metin düzenleyicilerinden birini kullanarak `teshis.sh` adında bir Bash betiği oluşturun. Betik, çalıştığında tüm çıktıları tek bir `rapor.log` dosyasına yönlendirmelidir.
 
@@ -42,13 +42,13 @@ Betik içeriğinde bulunması gereken bilgiler:
 
 > **İpucu:** Dosyayı ilk açışta baştan yazmak için `>`, sonraki verileri dosyanın sonuna eklemek için `>>` operatörünü kullanın.
 
-#### Aşama 3: İzinler ve Güvenlik (Permissions)
+#### Aşama 3: İzinler ve Güvenlik (Permissions)  *
 
 1. `teshis.sh` dosyasının mevcut izinlerini ve sahipliğini inceleyin (`ls -l`).
 
 2. Dosya izinlerini **yalnızca sahibi okuyabilir, yazabilir ve çalıştırabilir** (`rwx------` / sayısal: `700`) olacak biçimde ayarlayın.
 
-#### Aşama 4: Süreç Yönetimi ve Çalıştırma
+#### Aşama 4: Süreç Yönetimi ve Çalıştırma  *
 
 1. Betiği arka planda (`&` operatörüyle) çalıştırın:
 
@@ -86,13 +86,13 @@ Betik içeriğinde bulunması gereken bilgiler:
 
 | Alan | Kriter | Puan | 
 | ----- | ----- | ----- | 
-| **Gezinme & Dosya İşlemleri** | Dizin oluşturma, geçiş yapma, mutlak/göreli yol kullanımı ve silme | 15 | 
-| **Paket Yönetimi & Root** | `sudo` kullanımı, paket güncelleme ve kurulum adımları | 10 | 
-| **Bash Betiği & Düzenleyici** | Metin düzenleyici ile betik yazma, yönlendirme (`>`, `>>`) | 20 | 
-| **Dosya İzinleri** | Sayısal izin mantığını anlama (`chmod 700`) ve doğrulama | 15 | 
-| **Süreç Yönetimi** | Arka plan çalıştırma (`&`), PID ve çıkış kodu (`$?`) kontrolü | 15 | 
-| **Filtreleme & Arama** | `grep`, `tail`, `find` ve boru hattı kullanımı | 15 | 
-| **Sistem/Ağ Analizi** | Çekirdek, disk, RAM ve ağ parametrelerini doğru komutlarla alma | 10 | 
+| **Gezinme & Dosya İşlemleri** | Dizin oluşturma, geçiş yapma, mutlak/göreli yol kullanımı ve silme | 25 | 
+| **Paket Yönetimi & Root** | `sudo` kullanımı, paket güncelleme ve kurulum adımları | 20 | 
+| **Bash Betiği & Düzenleyici** | Metin düzenleyici ile betik yazma, yönlendirme (`>`, `>>`) | 25 | 
+| **Dosya İzinleri** | Sayısal izin mantığını anlama (`chmod 700`) ve doğrulama | 25 | 
+| **Süreç Yönetimi** | Arka plan çalıştırma (`&`), PID ve çıkış kodu (`$?`) kontrolü | 5 | 
+| **Filtreleme & Arama** | `grep`, `tail`, `find` ve boru hattı kullanımı | x | 
+| **Sistem/Ağ Analizi** | Çekirdek, disk, RAM ve ağ parametrelerini doğru komutlarla alma | x | 
 | **Toplam** |  | **100** | 
 
 ### 4. İlgili Komutlar Özeti
